@@ -10,6 +10,9 @@ import org.springframework.web.servlet.ModelAndView;
 @SpringBootApplication
 @Controller
 public class StartApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(StartApplication.class, args);
+    }
 
     @GetMapping("/")
     public ModelAndView index(final Model model) {
@@ -19,9 +22,6 @@ public class StartApplication {
         return mv;
     }
 
-    public static void main(String[] args) {
-        SpringApplication.run(StartApplication.class, args);
-    }
 
 
 }
