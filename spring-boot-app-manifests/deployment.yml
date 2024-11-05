@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: rtmano/boot-webapp:2.0
+        image: rtmano/boot-webapp:3.0
         ports:
         - containerPort: 8080
